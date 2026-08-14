@@ -1,7 +1,8 @@
 const email = document.querySelector('input[type="email"]');
 const password = document.querySelector('input[type="password"]');
-const button = document.querySelector('button');
 const show = document.querySelector('input[type="checkbox"]');
+const labelPassword = document.querySelector('#labelPassword')
+const button = document.querySelector('button');
 
 button.addEventListener('click', (event) => {
     event.preventDefault();
@@ -25,7 +26,24 @@ button.addEventListener('click', (event) => {
 show.addEventListener('change', (event) => {
     if (event.target.checked) {
         password.type = 'text';
+        labelPassword.textContent = 'Ocultar senha';
+        return
     } else {
         password.type = 'password';
+        labelPassword.textContent = 'Mostrar Senha'
     }
 });
+/*
+show.addEventListener('change', () => {
+    const attributeValue = password.getAttribute('type');
+
+    if (attributeValue === 'password') {
+        password.setAttribute('type', 'text');
+        labelPassword.textContent = 'Ocultar senha';
+        return
+    }
+
+    password.setAttribute('type', 'password');
+    labelPassword.textContent = 'Mostrar Senha'
+});
+*/
