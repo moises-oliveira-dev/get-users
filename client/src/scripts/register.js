@@ -26,11 +26,11 @@ button.addEventListener('click', (event) => {
 show.addEventListener('change', (event) => {
     if (event.target.checked) {
         password.type = 'text';
-        labelPassword.textContent = 'Ocultar senha';
+        labelPassword.textContent = 'Ocultar';
         return
     } else {
         password.type = 'password';
-        labelPassword.textContent = 'Mostrar Senha'
+        labelPassword.textContent = 'Mostrar'
     }
 });
 /*

@@ -7,20 +7,31 @@
             name="viewport" 
             content="width=device-width, initial-scale=1.0"/>
         <title>Registrar</title>
+        <link rel="stylesheet" href="..//pages/register.css"/>
     </head>
     <body>
         <main>
-            <form>
+            <div class="register-header">
                 <h1>Registrar</h1>
-                <label>E-mail *</label>
-                <input type="email"/>
-                <label>Senha *</label>
-                <input type="password"/>
-                <input type="checkbox"/>
-                <label id="labelPassword">Mostrar Senha</label>
-                <button>Registrar</button>
-                <p>Já possui conta? Acesse-a <a href="./login.html">aqui.</a></p>
-            </form>
+            </div>
+                <div class="card">
+                    <form>
+                        <div class="form-group">
+                            <label>E-mail *</label>
+                            <input type="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Senha *</label>
+                            <input type="password"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="labelPassword"/>
+                            <label for="labelPassword">Mostrar</label>
+                        </div>
+                        <button>Registrar</button>
+                        <p>Já possui conta? Acesse-a <a href="./login.html">aqui.</a></p>
+                    </form>
+                </div>
         </main>
         <script src="../scripts/register.js"></script>
     </body>

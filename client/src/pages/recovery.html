@@ -7,23 +7,36 @@
             name="viewport" 
             content="width=device-width, initial-scale=1.0"/>
         <title>Recuperar</title>
+        <link rel="stylesheet" href="..//pages/recovery.css"/>
     </head>
     <body>
         <main>
-            <form>
-                <h1>Recuperar</h1>
-                <label>E-mail *</label>
-                <input type="email"/>
-                <label>Nova Senha *</label>
-                <input id="new-password" type="password"/>
-                <label>Confirmar Nova Senha *</label>
-                <input id="confirm-new-password" type="password"/>
-                <input type="checkbox"/>
-                <label id="labelPassword">Mostrar Senha</label>
-                <button>Recuperar</button>
-                <p>Esqueceu a Senha? <a href="#">Recupere-a aqui.</a></p>
-                <p>Não possui cadastro? <a href="./register.html">Registre-se aqui.</a></p>
-            </form>
+                <div class="recovery-header">
+                    <h1>Recuperar</h1>
+                </div>
+                <div class="card">
+                    <form>
+                        <div class="form-group">
+                            <label>E-mail *</label>
+                            <input type="email"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Nova Senha *</label>
+                            <input id="new-password" type="password"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Confirmar Nova Senha *</label>
+                            <input id="confirm-new-password" type="password"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox"/>
+                            <label id="labelPassword">Mostrar Senha</label>
+                        </div>
+                        <button>Recuperar</button>
+                        <p>Esqueceu a Senha? <a href="#">Recupere-a aqui.</a></p>
+                        <p>Não possui cadastro? <a href="./register.html">Registre-se aqui.</a></p>
+                    </form>
+                </div>
         </main>
         <script src="../scripts/recovery.js"></script>
     </body>

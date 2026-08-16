@@ -6,22 +6,33 @@
         <meta 
             name="viewport" 
             content="width=device-width, initial-scale=1.0"/>
+            <link rel="stylesheet" href="../pages/login.css"/>
         <title>Acessar</title>
     </head>
     <body>
         <main>
-            <form>
-                <h1>Acessar</h1>
-                <label>E-mail *</label>
-                <input type="email"/>
-                <label>Senha *</label>
-                <input type="password"/>
-                <input type="checkbox"/>
-                <label id="labelPassword">Mostrar Senha</label>
-                <button>Acessar</button>
-                <p>Esqueceu a Senha? <a href="./recovery.html">Recupere-a aqui.</a></p>
-                <p>Não possui cadastro? <a href="./register.html">Registre-se aqui.</a></p>
-            </form>
+            <div class="login-header">
+                <h1>Login</h1>
+            </div>
+            <div class="card">
+                <form>
+                        <div class="form-group">
+                            <label>E-mail </label>
+                            <input type="email"/>
+                        </div>
+                    <div class="form-group">
+                        <label>Senha </label>
+                        <input type="password"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox"/>
+                        <label for="labelPassword">Mostrar</label>
+                    </div>
+                    <button>Acessar</button>
+                    <p>Esqueceu a Senha? <a href="./recovery.html">Recupere-a aqui.</a></p>
+                    <p>Não possui cadastro? <a href="./register.html">Registre-se aqui.</a></p>
+                </form>
+            </div>
         </main>
         <script src="../scripts/login.js"></script>
     </body>

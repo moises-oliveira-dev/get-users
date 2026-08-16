@@ -12,5 +12,7 @@ button.addEventListener ('click', () => {
 
   setTimeout (() =>{
     window.location.href = './login.html';
-  }, 3000);
+    title.textContent = 'Saindo...';
+  }, 2000);
+
 });

@@ -58,7 +58,9 @@ Abra o `client/index.html` no navegador para testar a busca de usuários, ou os 
 - Cadastro simulado de usuário (`sessionStorage`)
 - Login simulado, validando contra os dados salvos no `sessionStorage`
 - Toggle de mostrar/ocultar senha no formulário de login (checkbox alterna o `type` do input entre `password` e `text`)
+- Design as telas de login,register,recovery e home
 
+![alt text](image-1.png)
 
 ## Observações
 
